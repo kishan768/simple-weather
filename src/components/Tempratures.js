@@ -18,10 +18,10 @@ const Tempratures = ({data}) => {
               <div className="underline"></div>
               
               <div className="temp-details">
-                <div className="temp-details desc">
+                <div className="temp-details-desc">
                 <p>max temp</p>
                 </div>
-                <div className="temp details value">
+                <div className="temp-details-value">
                   <b>
 
                 {Math.round(data.main.temp_max)}&deg;C
@@ -29,10 +29,10 @@ const Tempratures = ({data}) => {
                 </div>
               </div>
               <div className="temp-details">
-                <div className="temp-details desc">
+                <div className="temp-details-desc">
                 <p>min temp</p>
                 </div>
-                <div className="temp details value">
+                <div className="temp-details-value">
                   <b>
 
                 {Math.round(data.main.temp_min)}&deg;C
@@ -40,10 +40,10 @@ const Tempratures = ({data}) => {
                 </div>
               </div>
               <div className="temp-details">
-                <div className="temp-details desc">
+                <div className="temp-details-desc">
                 <p>feels like</p>
                 </div>
-                <div className="temp details value">
+                <div className="temp-details-value">
                   <b>
 
                 {Math.round(data.main.feels_like)}&deg;C
@@ -51,18 +51,18 @@ const Tempratures = ({data}) => {
                 </div>
               </div>
               <div className="temp-details">
-                <div className="temp-details desc">
+                <div className="temp-details-desc">
                 <p>humidity</p>
                 </div>
-                <div className="temp details value">
+                <div className="temp-details-value">
                  <b>{data.main.humidity}%</b>
                 </div>
               </div>
               <div className="temp-details">
-                <div className="temp-details desc">
+                <div className="temp-details-desc">
                 <p>pressure</p>
                 </div>
-                <div className="temp details value">
+                <div className="temp-details-value">
                  <b>{data.main.pressure} hPa</b>
                 </div>
               </div>
@@ -140,16 +140,20 @@ const Wrapper = styled.nav`
       background-color: aquamarine;
     }
     & .temp-details{
-      /* display: flex;
+      display: flex;
       align-items: center;
-      justify-content: space-between; */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+      justify-content: space-between;
       margin-top: 0.2rem;
+    }
+    & .temp-details-desc{
+      font-size: 0.8rem;
+    }
+    & .temp-details-value{
+      font-size: 0.8rem;
     }
     
   }
+  
   .card-footer {
     background-color: #feb020;
     height: 2vh;
