@@ -47,7 +47,7 @@ const Wrapper = styled.nav`
     
   }
   .logo {
-    height: 5vw;
+    height: 12vh;
     width: 13vw;
     background-color: aquamarine;
     border-radius: 5rem;
@@ -79,6 +79,7 @@ const Wrapper = styled.nav`
           padding: 0.5rem;
         }
     }
+    
   }
 `;
 export default Navbar;
