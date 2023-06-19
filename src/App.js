@@ -18,7 +18,7 @@ function App() {
     try {
       setProgress(0);
       fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=1&appid=3bc56fb3ebaee6191600ac36a5a1cae4`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=1&appid=3bc56fb3ebaee6191600ac36a5a1cae4`
       )
         .then((resp) => {
           setProgress(20);
