@@ -146,10 +146,10 @@ const Wrapper = styled.nav`
       margin-top: 0.2rem;
     }
     & .temp-details-desc{
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     & .temp-details-value{
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     
   }
