@@ -96,7 +96,7 @@ const Wrapper = styled.nav`
     /* background-color: wheat; */
     margin-top: 0.5rem;
     margin-bottom: 3rem;
-    height: 60vh;
+    height: 80vh;
     width: 80vw;
     padding: 1rem;
     /* border: 2px solid red; */
@@ -121,14 +121,17 @@ const Wrapper = styled.nav`
     background-color: white;
     height: 35vh;
     padding: 1rem;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    display: grid;
     & .card-temp-details{
       align-self: baseline;
     }
     & .card-temp{
-      font-size: 4.5rem;
+      font-size: 2.5rem;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     & .underline{

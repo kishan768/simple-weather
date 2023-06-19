@@ -44,10 +44,11 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
   .logo {
-    height: 60px;
-    width: 70px;
+    height: 5vw;
+    width: 13vw;
     background-color: aquamarine;
     border-radius: 5rem;
     color: white;
@@ -57,7 +58,7 @@ const Wrapper = styled.nav`
   .title {
     letter-spacing: 0.1rem;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
   }
 .nav-form{
     display: block;
