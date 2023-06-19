@@ -18,7 +18,7 @@ function App() {
     try {
       setProgress(0);
       fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=1&appid=${process.env.REACT_APP_API_KEY}`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=1&appid=3bc56fb3ebaee6191600ac36a5a1cae4`
       )
         .then((resp) => {
           setProgress(20);
@@ -27,7 +27,7 @@ function App() {
         .then((data) => {
           setProgress(40);
           return fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&units=metric&lon=${data[0].lon}&appid=${process.env.REACT_APP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&units=metric&lon=${data[0].lon}&appid=3bc56fb3ebaee6191600ac36a5a1cae4`
           );
         })
         .then((response) => {
